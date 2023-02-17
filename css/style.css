@@ -1,0 +1,193 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Regular.woff) format(woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-SemiBold.woff) format(woff);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Bold.woff) format(woff);
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    color: #868695;
+    background-color: #0E0E2C;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*__________________________header_________________________*/
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0 0 0;
+}
+
+.header__wrapper {
+    margin-bottom: 300px;
+}
+
+.menu-list {
+    display: flex;
+    gap: 53px;
+}
+
+.menu__list {
+    margin-left: 100px;
+}
+
+.menu-list__link {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+}
+
+.menu-buttons {
+    display: flex;
+    gap: 27px;
+}
+
+.menu-buttons__item-transparent {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    color: #FFBE0B;
+    padding: 11px 35px;
+    border: 1px solid #FFBE0B;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.button {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 180%;
+    color: #000000;
+    padding: 11px 35px;
+    background-color: #FFBE0B;
+    border-radius: 5px;
+}
+
+.header-burger {
+    background-color: transparent;
+    display: none;
+}
+
+.header-burger__svg {
+    fill: #fff;
+}
+
+@media (max-width: 946px) {
+
+    .menu__list,
+    .menu__buttons {
+        margin: 0 auto;
+        display: none;
+    }
+
+    .header-burger {
+        display: block;
+    }
+
+    .menu__logo {
+        width: 200px;
+    }
+}
+
+/*_________________________shopify____________________*/
+
+
+.shopify__plate {
+    padding-bottom: 17px;
+}
+
+.plate__button {
+    cursor: default;
+    padding: 7px 13px;
+    background-color: #172656;
+    color: #3A86FF;
+    font-size: 14px;
+}
+
+.shopify-content {
+    max-width: 550px;
+}
+
+.shopify__content {
+    position: relative;
+}
+
+.shopify-content__title {
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 130%;
+    color: #fff;
+    padding-bottom: 34px;
+}
+
+.shopify-content__text {
+    font-size: 16px;
+    padding-bottom: 50px;
+}
+
+.form {
+    border-radius: 5px;
+    border: 3px solid rgba(150, 150, 150, 0.24);
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopify-content__form {
+    margin-bottom: 35px;
+}
+
+.approval {
+    display: flex;
+    gap: 45px;
+}
+
+.approval-item {
+    display: flex;
+    align-items: center;
+}
+
+.approval-item__text {
+    padding: 0 0 0 15px;
+}
+
+.shopify__img {
+    position: absolute;
+    top: 240px;
+    right: 232px;
+}
