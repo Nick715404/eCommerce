@@ -140,6 +140,10 @@ body {
     font-size: 14px;
 }
 
+.shopify__wrapper {
+    margin-bottom: 265px;
+}
+
 .shopify-content {
     max-width: 550px;
 }
