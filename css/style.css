@@ -108,7 +108,7 @@ body {
     fill: #fff;
 }
 
-@media (max-width: 946px) {
+/* @media (max-width: 946px) {
 
     .menu__list,
     .menu__buttons {
@@ -123,7 +123,7 @@ body {
     .menu__logo {
         width: 200px;
     }
-}
+} */
 
 /*_________________________shopify____________________*/
 
@@ -162,10 +162,26 @@ body {
 }
 
 .form {
-    border-radius: 5px;
+    border-radius: 10px;
     border: 3px solid rgba(150, 150, 150, 0.24);
+    max-width: 485px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 0 20px;
+}
+
+.form__img {
+    padding-right: 10px;
+}
+
+.form__control {
+    margin-right: 28px;
+    width: 265px;
+    background-color: transparent;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 180%;
+    color: #fff;
 }
 
 .shopify-content__form {
