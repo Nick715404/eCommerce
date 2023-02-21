@@ -137,10 +137,11 @@ body {
 
 .plate__button {
     cursor: default;
-    padding: 7px 13px;
+    padding: 8px 17px;
     background-color: #172656;
     color: #3A86FF;
     font-size: 14px;
+    text-transform: uppercase;
 }
 
 .shopify__wrapper {
@@ -149,14 +150,21 @@ body {
 
 .shopify-content {
     max-width: 550px;
-    background-image: url(/img/EllipseBlue.png);
+    /* background-image: url(/img/EllipseBlue.png);
     background-repeat: no-repeat;
     background-size: cover;
-    
+     */
 }
 
 .shopify__content {
     position: relative;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 130%;
+    color: #fff;
 }
 
 .shopify-content__title {
@@ -164,6 +172,10 @@ body {
     font-size: 62px;
     line-height: 130%;
     color: #fff;
+}
+
+
+.shopify-content__title {
     padding-bottom: 34px;
 }
 
@@ -236,7 +248,7 @@ body {
     padding: 30px 15px 30px 15px;
 }
 
-.shopify-cards__img{
+.shopify-cards__img {
     padding-bottom: 10px;
 }
 
@@ -297,4 +309,67 @@ body {
     position: relative;
     bottom: 48px;
     left: 20px;
+}
+
+/*__________________services_____________*/
+
+.services__wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 117px;
+}
+
+.services__img {
+    width: 635px;
+}
+
+.services__plate {
+    padding-bottom: 20px;
+}
+
+.services__title {
+    padding-bottom: 10px;
+}
+
+.indicators {
+    display: flex;
+    gap: 90px;
+}
+
+.indicators__item{
+    max-width: 180px;
+}
+
+.indicators__item--bordered {
+    padding-left: 38px;
+}
+
+.indicators__title {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 130%;
+    padding-bottom: 15px;
+}
+
+.indicators__title--yellow {
+    color: #FFBE0B;
+}
+
+.indicators__title--orange {
+    color: #FB5607;
+}
+
+.indicators__item--bordered {
+    border-left: 1px solid #626276;
+}
+
+/*____________________________________________________*/
+
+.creative__wrapper {
+    display: flex;
+    gap: 90px;
+}
+
+.creative-content {
+    max-width: 535px;
 }
