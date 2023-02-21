@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eCommerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -59,8 +62,8 @@
                         <p class="shopify-content__text">More than 90,000+ companies trust our business. Get help from a
                             dedicated shopify developer today.</p>
                         <div class="shopify-content__form form">
-                            <svg class="form__img" xmlns="http://www.w3.org/2000/svg" width="33" height="31" fill="currentColor"
-                                class="bi bi-envelope" viewBox="0 0 16 16">
+                            <svg class="form__img" xmlns="http://www.w3.org/2000/svg" width="33" height="31"
+                                fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
                                 <path
                                     d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
                             </svg>
@@ -78,16 +81,37 @@
                                 <p class="approval-item__text">No credit card required</p>
                             </div>
                         </div>
-                    </div>
-                    <img class="shopify__img" src="/img/shopify.png" alt=""> <!-- сделать как бэкграунд -->
-                    <div class="shopify__cards shopidy-cards">
-                        
+                        <img class="shopify__img" src="/img/shopify.png" alt="">
+
+                        <div class="shopify-content__cards shopify-cards">
+                            <div class="shopify-cards__card shopify-cards__card--vertically">
+                                <img class="shopify-cards__img" src="/img/cardImg.svg" alt="">
+                                <h3 class="shopify-cards__title">Make Progress</h3>
+                                <p class="shopify-cards__text">with opening plans</p>
+                                <button class="shopify-cards__btn">Buy Plan</button>
+                            </div>
+                            <div class="shopify-cards__card shopify-cards__card--horizontally">
+                                <img class="shopify-cards__img shopify-cards__img--vert" src="/img/cardImgGirl.png"
+                                    alt="">
+                                <div class="shopify-cards__textbox">
+                                    <h3 class="shopify-cards__title">Margaret Philips</h3>
+                                    <p class="shopify-cards__text shopify-cards__text--horiz">Watch our best services</p>
+                                </div>
+                                <button class="shopify-cards__btn shopify-cards__btn--video">
+                                    <svg class="shopify-cards__svg" width="16" height="19" viewBox="0 0 16 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.7533 8.91645L1.81049 0.874856C1.70147 0.807123 1.57668 0.770138 1.44894 0.767706C1.3212 0.765274 1.19513 0.797483 1.08369 0.86102C0.972258 0.924556 0.879485 1.01713 0.814915 1.12921C0.750345 1.24129 0.716309 1.36884 0.716309 1.49873V17.5819C0.716309 17.7118 0.750345 17.8394 0.814915 17.9514C0.879485 18.0635 0.972258 18.1561 1.08369 18.2196C1.19513 18.2832 1.3212 18.3154 1.44894 18.3129C1.57668 18.3105 1.70147 18.2735 1.81049 18.2058L14.7533 10.1642C14.8584 10.0989 14.9453 10.0072 15.0056 9.89797C15.0658 9.78872 15.0975 9.66557 15.0975 9.54032C15.0975 9.41507 15.0658 9.29192 15.0056 9.18268C14.9453 9.07344 14.8584 8.98177 14.7533 8.91645Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div> <!-- shopify__wrapper -->
             </div>
-
         </section>
-        
+
         <section class="services">
             <div class="container">
                 <div class="services__wrapper">
