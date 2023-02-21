@@ -419,3 +419,39 @@ body {
     font-size: 14px;
     line-height: 180%;
 }
+
+/*________________________________________________*/
+
+.stories__wrapper {
+    display: flex;
+    gap: 15px;
+}
+
+.stories-content__title {
+    padding-bottom: 90px;
+}
+
+.stories-list__item {
+    padding-bottom: 50px;
+}
+
+.stories-list__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    padding-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.stories-list div::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #3A86FF;
+    display: inline-block;
+} 
+
+.stories-list__text {
+    font-size: 14px;
+}
