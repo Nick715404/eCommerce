@@ -32,7 +32,7 @@ html {
 body {
     font-family: 'Montserrat';
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 180%;
     color: #868695;
     background-color: #0E0E2C;
@@ -336,7 +336,7 @@ body {
     gap: 90px;
 }
 
-.indicators__item{
+.indicators__item {
     max-width: 180px;
 }
 
@@ -367,9 +367,55 @@ body {
 
 .creative__wrapper {
     display: flex;
-    gap: 90px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 185px;
 }
 
 .creative-content {
     max-width: 535px;
+}
+
+.creative__plate {
+    padding-bottom: 20px;
+}
+
+.creative-content__title {
+    padding-bottom: 35px;
+}
+
+.creative-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 558px;
+}
+
+.creative-item {
+    max-width: 265px;
+    border-radius: 10px;
+    padding: 25px 10px;
+    transition: all 0.3s;
+}
+
+.creative-item:hover {
+    background-color: #1A1A3D;
+}
+
+.creative-item__img {
+    margin-bottom: 30px;
+}
+
+.creative-item__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.creative-item__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
 }
