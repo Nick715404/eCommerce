@@ -187,12 +187,16 @@ body {
 .form {
     border-radius: 10px;
     border: 3px solid rgba(150, 150, 150, 0.24);
-    max-width: 485px;
+    min-width: 485px;
     display: flex;
     align-items: center;
     padding: 0 10px 0 20px;
     position: relative;
     z-index: 2;
+}
+
+.shopify-content__form--small {
+    width: 485px;
 }
 
 .form__img {
@@ -492,4 +496,27 @@ body {
 .ads-content__title {
     padding-bottom: 35px;
     max-width: 533px;
+}
+
+/*_______________________________________________________*/
+
+.contact__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 185px;
+}
+
+.contact-textbox__title {
+    padding-bottom: 17px;
+}
+
+.contact__textbox {
+    padding-bottom: 50px;
+}
+
+/*________________________________________*/
+
+.footer__wrapper {
+    margin-bottom: 85px;
 }
