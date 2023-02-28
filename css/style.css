@@ -8,27 +8,6 @@ html {
     box-sizing: inherit;
 }
 
-/* @font-face {
-    font-family: 'Montserrat';
-    src: url(/fonts/Montserrat-Regular.woff) format(woff);
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url(../fonts/Montserrat-SemiBold.woff) format(woff);
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url(../fonts/Montserrat-Bold.woff) format(woff);
-    font-weight: 700;
-    font-style: normal;
-} */
-
 body {
     font-family: 'Montserrat';
     font-weight: 400;
@@ -111,22 +90,6 @@ body {
     fill: #fff;
 }
 
-/* @media (max-width: 946px) {
-
-    .menu__list,
-    .menu__buttons {
-        margin: 0 auto;
-        display: none;
-    }
-
-    .header-burger {
-        display: block;
-    }
-
-    .menu__logo {
-        width: 200px;
-    }
-} */
 
 /*_________________________shopify____________________*/
 
@@ -236,6 +199,7 @@ body {
     top: -156px;
     left: 410px;
     z-index: 0;
+    object-fit: cover;
 }
 
 .shopify-cards__card--vertically {
@@ -519,4 +483,41 @@ body {
 
 .footer__wrapper {
     margin-bottom: 85px;
+}
+
+/*_____________________________________________________________*/
+
+@media (max-width:1400px) {
+    .shopify__img {
+        left: 435px;
+        top: -30px;
+        width: 70vh;
+    }
+    .shopify-cards__card--vertically {
+        right: -580px;
+    }
+}
+
+@media (max-width:992px) {
+    .menu__list {
+        margin-left: -5px;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .menu__list,
+    .menu__buttons {
+        margin: 0 auto;
+        display: none;
+    }
+
+    .header-burger {
+        display: block;
+    }
+
+    .menu__logo {
+        width: 200px;
+    }
 }
