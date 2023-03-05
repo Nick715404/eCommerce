@@ -26,6 +26,33 @@ body {
     padding: 0 20px;
 }
 
+:root {
+    --index: calc(1vw + 1vh)
+}
+
+.page {
+    overflow-x: hidden;
+}
+
+.button {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 180%;
+    color: #000000;
+    padding: 11px 35px;
+    background-color: #FFBE0B;
+    border: 1px solid #FFBE0B;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: #FFBE0B;
+    outline: none;
+}
+
 /*__________________________header_________________________*/
 
 .menu {
@@ -36,7 +63,7 @@ body {
 }
 
 .header__wrapper {
-    margin-bottom: 300px;
+    margin-bottom: 170px;
 }
 
 .menu-list {
@@ -46,6 +73,29 @@ body {
 
 .menu__list {
     margin-left: 100px;
+}
+
+.menu-list__link {
+    position: relative;
+}
+
+.menu-list__link::after {
+    content: '';
+    position: absolute;
+    background-color: #FFFFFF;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -6px;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s ;
+}
+
+.menu-list__link:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
 }
 
 .menu-list__link {
@@ -61,7 +111,7 @@ body {
 }
 
 .menu-buttons__item-transparent {
-    font-weight: 400;
+    font-weight: 600;
     font-size: 16px;
     line-height: 180%;
     color: #FFBE0B;
@@ -69,16 +119,13 @@ body {
     border: 1px solid #FFBE0B;
     border-radius: 5px;
     background-color: transparent;
+    transition: all .4s;
 }
 
-.button {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 180%;
-    color: #000000;
-    padding: 11px 35px;
+.menu-buttons__item-transparent:hover {
     background-color: #FFBE0B;
-    border-radius: 5px;
+    color: #000000;
+    border: 1px solid #FFBE0B;
 }
 
 .header-burger {
@@ -93,6 +140,30 @@ body {
 
 /*_________________________shopify____________________*/
 
+.shopify__wrapper {
+    margin-bottom: 265px;
+    padding: 50px 0 50px 0;
+    min-height: 860px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+
+.shopify__imgbox {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    right: -15%;
+    z-index: 1;
+
+    transform: translateY(-40%);
+}
+
+.shopify__img {
+    width: 100%;
+}
 
 .shopify__plate {
     padding-bottom: 17px;
@@ -107,16 +178,8 @@ body {
     text-transform: uppercase;
 }
 
-.shopify__wrapper {
-    margin-bottom: 265px;
-}
-
 .shopify-content {
-    max-width: 550px;
-    /* background-image: url(/img/EllipseBlue.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-     */
+    max-width: 550px; 
 }
 
 .shopify__content {
@@ -150,30 +213,29 @@ body {
 .form {
     border-radius: 10px;
     border: 3px solid rgba(150, 150, 150, 0.24);
-    min-width: 485px;
+    max-width: 485px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 10px 0 20px;
     position: relative;
     z-index: 2;
 }
 
-.shopify-content__form--small {
-    width: 485px;
-}
 
 .form__img {
     padding-right: 10px;
 }
 
 .form__control {
-    margin-right: 18px;
-    width: 265px;
+    position: relative;
+    width: 230px;
     background-color: transparent;
     font-size: 13px;
     font-weight: 400;
     line-height: 180%;
     color: #fff;
+    padding-right: 20px;
 }
 
 .shopify-content__form {
@@ -194,18 +256,16 @@ body {
     padding: 0 0 0 15px;
 }
 
-.shopify__img {
-    position: absolute;
-    top: -156px;
-    left: 410px;
-    z-index: 0;
-    object-fit: cover;
+.shopify__imgContainer {
+    position: relative;
+    padding-top: 58%;
 }
+
 
 .shopify-cards__card--vertically {
     position: absolute;
-    top: 100px;
-    right: -740px;
+    top: 310px;
+    right: -188px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -214,6 +274,7 @@ body {
     border-radius: 10px;
     width: 192px;
     padding: 30px 15px 30px 15px;
+    z-index: 2;
 }
 
 .shopify-cards__img {
@@ -247,8 +308,9 @@ body {
     align-items: center;
     border-radius: 10px;
     position: absolute;
-    top: 550px;
-    left: 442px;
+    bottom: 0px;
+    left: 445px;
+    z-index: 2;
 }
 
 .shopify-cards__btn--video {
@@ -288,7 +350,7 @@ body {
 }
 
 .services__img {
-    width: 635px;
+    width: 100%;
 }
 
 .services__plate {
@@ -331,7 +393,7 @@ body {
     border-left: 1px solid #626276;
 }
 
-/*____________________________________________________*/
+/*_____________________creative_________________________*/
 
 .creative__wrapper {
     display: flex;
@@ -363,7 +425,7 @@ body {
     max-width: 265px;
     border-radius: 10px;
     padding: 25px 10px;
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 
 .creative-item:hover {
@@ -388,7 +450,7 @@ body {
     line-height: 180%;
 }
 
-/*________________________________________________*/
+/*___________________stories________________________*/
 
 .stories__wrapper {
     display: flex;
@@ -397,12 +459,18 @@ body {
     margin-bottom: 275px;
 }
 
+.stories__img {
+    width: 90%;
+    height: 90%;
+}
+
 .stories-content__title {
     padding-bottom: 90px;
 }
 
 .stories-list__item {
     padding-bottom: 50px;
+    position: relative;
 }
 
 .stories-list__title {
@@ -413,14 +481,15 @@ body {
     color: #FFFFFF;
 }
 
-.stories-list div::before {
+/* .stories-list div::before {
     content: '';
+    position: absolute;
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: #3A86FF;
     display: inline-block;
-}
+} */
 
 .stories-list__text {
     font-size: 14px;
@@ -428,7 +497,7 @@ body {
 
 .stories-card {
     position: absolute;
-    bottom: -50px;
+    bottom: -40px;
     left: -105px;
     display: flex;
     flex-direction: column;
@@ -451,6 +520,10 @@ body {
     align-items: center;
     gap: 100px;
     margin-bottom: 150px;
+}
+
+.ads__img {
+    width: 100%;
 }
 
 .ads__plate {
@@ -485,16 +558,24 @@ body {
     margin-bottom: 85px;
 }
 
+.menulist__item svg{
+    transition: all .5s;
+}
+
+.menulist__item svg:hover {
+    border-radius: 50%;
+    background-color: #FFBE0B;
+    width: 100%;
+}
+
 /*_____________________________________________________________*/
 
 @media (max-width:1400px) {
     .shopify__img {
-        left: 435px;
-        top: -30px;
-        width: 70vh;
+        
     }
     .shopify-cards__card--vertically {
-        right: -580px;
+        
     }
 }
 
