@@ -228,7 +228,7 @@ body {
 
 .form__control {
     position: relative;
-    width: 230px;
+    width: 50%;
     background-color: transparent;
     font-size: 13px;
     font-weight: 400;
